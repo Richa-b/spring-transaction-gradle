@@ -20,8 +20,8 @@ public class TransactionConfig {
     @Bean
     DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("jdbc:mysql://localhost:3306/transaction-demo");
-        dataSource.setUrl("com.mysql.jdbc.Driver");
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/transactionDemo");
         dataSource.setUsername("root");
         dataSource.setPassword("igdefault");
         return dataSource;
