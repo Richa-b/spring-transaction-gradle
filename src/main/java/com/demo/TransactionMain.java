@@ -13,6 +13,6 @@ public class TransactionMain {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(TransactionConfig.class);
         AccountService accountService =(AccountService) applicationContext.getBean("accountService");
-        accountService.insertEmployee();
+        accountService.insertIntoUserAccountUsingProgrammaticTransaction();
     }
 }
